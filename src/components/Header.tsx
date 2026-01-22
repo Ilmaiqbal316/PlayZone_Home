@@ -36,7 +36,7 @@ export function Header({ userName, userInitials }: HeaderProps) {
 
   return (
     //<header className="flex items-center justify-between bg-[#000000] border-b border-border px-6 py-4">
-      <header className="flex items-center justify-between bg-[#000000] px-6 py-4">
+      <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between bg-[#000000] px-4 py-4 md:px-6">
       {/* Logo */}
       <div className="flex items-center gap-3">
         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-orange">
@@ -58,7 +58,7 @@ export function Header({ userName, userInitials }: HeaderProps) {
 
         {/* Divider */}
         {/* <div className="h-8 w-px bg-border" /> */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
 
         {/* Time */}
         <div className="text-center">

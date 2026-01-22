@@ -47,7 +47,7 @@ export default function Index() {
 
       {/* Main Content */}
       <main className="flex-1 p-6">
-        <div className="flex gap-6 h-full">
+        <div className="flex flex-col lg:flex-row gap-6 h-full">
           {/* Sessions Grid */}
           <div className="flex-1 flex flex-col">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
@@ -78,7 +78,7 @@ export default function Index() {
           </div>
 
           {/* Waiting List Sidebar */}
-          <div className="w-72 shrink-0">
+          <div className="w-full lg:w-72 shrink-0">
             <WaitingList customers={waitingCustomers} />
           </div>
         </div>
